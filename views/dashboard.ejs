@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
 </head>
 <body>
     <div class="dash">
         <h1>Welcome to the Dashboard</h1>
-         <% if (userDetails) { %>
+        <% if (userDetails) { %>
             <p>User Details:</p>
             <ul>
                 <li>First Name: <%= userDetails.firstName %></li>
-                <li>Last Name: <%= userDetails.lastName %></li>
-                <%  %> 
-                Add other user details here
-             </ul>
+                <li>Last Name: <%= userDetails.secondName %></li>
+                <li>Email: <%= userDetails.email %></li>
+                <!-- Add other user details here -->
+            </ul>
         <% } else { %>
             <p>No user details found.</p>
         <% } %> 

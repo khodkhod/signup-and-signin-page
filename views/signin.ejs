@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login in</title>
+    <title>Login</title>
     <link rel="stylesheet" href="/style/signin.css">
 </head>
 <body>
 <form action="/signin" method="post">
     <div class="container">
-        <h2>log in</h2>
+        <h2>Log In</h2>
         <div class="all-inputs">
-            <input type="email" class="you" name="email" id="email" placeholder="email">
-            <input type="password" class="you" name="password" id="password" placeholder="passsword">
-            <a href="#" class="for">forget password?</a>
+            <label for="email" class="sr-only">Email</label>
+            <input type="email" class="you" name="email" id="email" placeholder="Email" required>
+            
+            <label for="password" class="sr-only">Password</label>
+            <input type="password" class="you" name="password" id="password" placeholder="Password" required>
+            
+            <a href="/forgot-password" class="for">Forget password?</a>
         </div>
         <div class="button">
-            <button>log in</button>
+            <button type="submit">Log In</button>
         </div>
-        <span class="spa"> Don't have an acct? <a href="#">sign up</a> here </span>
+        <span class="spa"> Don't have an account? <a href="/signup">Sign up</a> here </span>
     </div>
 </form>
 </body>

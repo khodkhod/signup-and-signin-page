@@ -10,7 +10,7 @@ app.use(express.static("public"));
 
 app.use(express.urlencoded({extended: true}));
 console.log("Database connected");
-let URI="mongodb+srv://tech_hijabie:Ayomiku07@cluster0.4is8ejc.mongodb.net/mydata?retryWrites=true&w=majority&appName=Cluster0"
+let URI="mongodb+srv://tech_hijabie:khodkhod@cluster0.4is8ejc.mongodb.net/mydata?retryWrites=true&w=majority&appName=Cluster0"
 
 mongoose.connect(URI).then(()=>{
   console.log(("Database connected"));

@@ -4,30 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="/style/style.css">
 </head>
 
 <body>
     <form action="/signup" method="post">
         <div class="container">
-            <h2>sign up</h2>
+            <h2>Sign Up</h2>
             <div class="all-inputs">
-                <input type="text" class="you" name="firstName" id="" placeholder="First Name">
-                <input type="text" class="you" name="secondName" id="" placeholder="Last Name">
-                <input type="email" class="you" name="email" id="" placeholder="email">
-                <input type="password" class="you" name="password" id="" placeholder="passsword">
+                <label for="firstName" class="sr-only">First Name</label>
+                <input type="text" class="you" name="firstName" id="firstName" placeholder="First Name" required>
+                
+                <label for="secondName" class="sr-only">Last Name</label>
+                <input type="text" class="you" name="secondName" id="secondName" placeholder="Last Name" required>
+                
+                <label for="email" class="sr-only">Email</label>
+                <input type="email" class="you" name="email" id="email" placeholder="Email" required>
+                
+                <label for="password" class="sr-only">Password</label>
+                <input type="password" class="you" name="password" id="password" placeholder="Password" required>
+                
                 <div class="radios">
-                    <label for="male">male</label>
-                    <input type="radio" name="gender" id="male">
-                    <label for="female">female</label>
-                    <input type="radio" name="gender" id="female">
-                    <label for="custom">custom</label>
-                    <input type="radio" name="gender" id="custom">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male" required>
+                    
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    
+                    <label for="custom">Custom</label>
+                    <input type="radio" name="gender" id="custom" value="custom">
                 </div>
             </div>
             <div class="button">
-                <button>Submit</button>
+                <button type="submit">Submit</button>
             </div>
         </div>
     </form>
